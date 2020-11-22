@@ -8,8 +8,8 @@ try:
 except ImportError:
     from mock import patch
 
-from ..ansitowin32 import StreamWrapper
-from ..initialise import init
+from colorama.ansitowin32 import StreamWrapper
+from colorama.initialise import init
 from .utils import osname, redirected_output, replace_by
 
 orig_stdout = sys.stdout

@@ -12,6 +12,5 @@ matrix:
     - python: 3.6
     - python: 3.5
     - python: pypy
-install:
-  - "pip install mock"
-script: "python -m unittest discover -p *_test.py"
+install: pip install tox
+script: tox -e py
